@@ -112,6 +112,7 @@ public class GridAffectorUI implements ActionListener {
         cons.fill = GridBagConstraints.HORIZONTAL;
         cons.gridwidth = 3;
         String[] choices = RuleBase.RULES_BASE.keySet().toArray(String[]::new);
+        java.util.Arrays.sort(choices);
         ruleset_selector = new JComboBox<String>(choices);
         // randomize_button.addActionListener(this);
         thisframe.getContentPane().add(ruleset_selector, cons);

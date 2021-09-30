@@ -57,8 +57,6 @@ public class CellularAutomata{
         return grid[y][x];
     }
 
-    
-
     public CellularAutomata(int widht, int height){
         grid = new int[height][widht];
         this.width = widht;
